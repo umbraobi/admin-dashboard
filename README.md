@@ -6,6 +6,11 @@ All data shown is either static, mock, or local component state.
 
 ---
 
+## 🖼️ **Screenshots**
+
+![Desktop View](screenshots/desktop.jpg)  
+![Mobile View](screenshots/mobile.jpg)
+
 ## 🧰 **Tech Stack**
 
 This project uses the following tools and libraries:
@@ -45,6 +50,7 @@ This project uses the following tools and libraries:
 
 - 📊 **Analytics Dashboard** – Charts, graphs, stats using Recharts
 - 🧭 **Modern UI** – Clean layout built with TailwindCSS
+- 🌙 **Dark Mode Support** – Switch between light and dark themes
 - ⚡ **Fast Development** – Powered by Vite's lightning-fast HMR
 - 📱 **Responsive Design** – Mobile-friendly admin layout
 - 🎨 **Icon-rich Interface** – Lucide icons for buttons and navigation
