@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin-dashboard | Umbraobi</title>
+
+    <!-- This single line will be updated by JS – Tailwind stays happy -->
+    <meta name="theme-color" content="#f1f5f9" />
+
+    <!-- Tailwind CSS (keep your real path) -->
+    <link href="/src/App.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-slate-50 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Tiny, bulletproof script – runs AFTER React mounts, never breaks Tailwind -->
+    <script type="module">
+      const light = "#f1f5f9"; // light background feel
+      const dark = "#0f172a"; // slate-900
+
+      const meta = document.querySelector('meta[name="theme-color"]');
+
+      const update = () => {
+        const isDark = document.documentElement.classList.contains("dark");
+        meta.setAttribute("content", isDark ? dark : light);
+      };
+
+      // Run once now
+      update();
+
+      // Watch for your dark mode toggle
+      new MutationObserver(update).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["class"],
+      });
+    </script>
+  </body>
+</html>

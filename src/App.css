@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* This enables class-based dark mode – your toggle will now work! */
+@custom-variant dark (&:where(.dark, .dark *));
