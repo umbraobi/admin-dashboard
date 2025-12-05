@@ -1,9 +1,6 @@
 # 🛠️ **Admin Dashboard – React + Vite**
 
-A modern **React + Vite** powered **Admin Dashboard frontend** built for analytics, management, and monitoring.  
-This project is **pure frontend**, with **no API**, **no backend**, and **no context file**.  
-All data shown is either static, mock, or local component state.
-
+A modern Admin Dashboard using **React JS and Tailwind CSS**, featuring side menus, cards, charts, and tables. It’s fully responsive and designed to manage any application backend efficiently, with a clean and interactive interface.
 ---
 
 ## 🖼️ **Screenshots**
